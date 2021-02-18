@@ -15,16 +15,17 @@
   <h1>Open mHealth Data Filter Tool</h1>
   <p>Upload a JSON file and select the options to keep.</p>
   <div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Data Type
-  </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="#">Blood Glucose</a>
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Data Type
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#">Blood Glucose</a>
+    </div>
   </div>
-</div>
-  <label class="form-label" for="customFile">Default file input example</label>
+  <label class="form-label" for="customFile">Upload file in JSON format</label>
   <input type="file" class="form-control" id="customFile" />
+  <button type="button" class="btn btn-default" onclick="clickHandler()">Convert</button>
+  <script src="./lib/js/filter-data.js"></script>
 </div>
-
 </body>
 </html>
