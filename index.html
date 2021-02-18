@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<div class="container">
+<div class="bg-primary text-white container">
   <h1>Open mHealth Data Filter Tool</h1>
   <p>Upload a JSON file and select the options to keep.</p>
   <label for="data-type">Choose the data type:</label>
@@ -19,9 +19,12 @@
   <select name="data-type" id="data-type" onchange="dataTypeChange()">
     <option value="none">---</option>
     <option value="blood-glucose">Blood Glucose</option>
+    <option value="weight">Weight</option>
   </select>
 </div>
-<div class="pt-5 container" id="blood-glucose-options" style="display: none;">
+<div class="pt-5 container">
+</div>
+<div class="bg-primary text-white container" id="blood-glucose-options" style="display: none;">
   <h2>Blood Glucose Options</h2>
   <div class="form-check">
     <input class="form-check-input" type="checkbox" value="" id="meal">
@@ -45,6 +48,21 @@
     <input class="form-check-input" type="checkbox" value="" id="timeframe">
     <label class="form-check-label" for="timeframe">
       With datetime time frame
+    </label>
+  </div>
+</div>
+<div class="bg-primary text-white container" id="weight-options" style="display: none;">
+  <h2>Body Weight Options</h2>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="only">
+    <label class="form-check-label" for="meal">
+      Only weight
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="weightDescription">
+    <label class="form-check-label" for="timeframe">
+      With descriptive statistic
     </label>
   </div>
 </div>
